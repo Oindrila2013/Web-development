@@ -180,6 +180,30 @@
             justify-content: space-between;
         }
 
+        header{
+            grid-area: header;
+        }
+
+        nav{
+            grid-area: nav;
+        }
+
+        #info{
+            grid-area: intro;
+        }
+
+        #main-section{
+            grid-area: main-section;
+        }
+
+        #bestsellers{
+            grid-area: bestsellers;
+        }
+
+        footer{
+            grid-area: footer;
+        }
+
         #bestsellers h2{
             padding: 20px;
         }
@@ -193,6 +217,17 @@
             left: 40%;
             width: 400px;
         }
+
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            grid-template-areas: 
+            " header header header header info"
+            " nav nav nav nav into "
+            " main-section main-section main-section main-section bestsellers "
+            " footer footer footer footer footer ";
+        }
+
     </style>
 </head>
 
