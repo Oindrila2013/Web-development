@@ -108,8 +108,8 @@
         }
 
         button{
-            color: white;
-            background-color: rgb(226, 127, 127);
+            color: rgb(255, 255, 255);
+            background-color: rgb(175, 116, 227);
             font-size: 20px;
             font-weight: bold;
             padding: 5px;
@@ -182,6 +182,7 @@
         ol li{
             margin-bottom: 20px;
         }
+
         #food-reviews h3,
         #food-reviews p{
             position: relative;
@@ -198,7 +199,54 @@
             display: flex;
             justify-content: space-between;
         }
-        
+
+        header{
+            grid-area: header;
+        }
+
+        nav{
+            grid-area: nav;
+        }
+
+        #info{
+            grid-area: info;
+        }
+
+        #main-section{
+            grid-area: main-section;
+        }
+
+        #bestsellers{
+            grid-area: bestsellers;
+        }
+
+        footer{
+            grid-area: footer;
+        }
+
+         #bestsellers h2{
+            padding: 20px;
+        }
+
+        ol li{
+            margin-bottom: 20px;
+        }
+        #book-reviews h3,
+        #book-reviews p{
+            position: relative;
+            left: 40%;
+            width: 400px;
+        }
+
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            grid-template-areas: 
+            " header header header header info"
+            " nav nav nav nav into "
+            " main-section main-section main-section main-section bestsellers "
+            " footer footer footer footer footer ";
+        }
     </style>
 </head>
 
@@ -322,7 +370,7 @@
             <address>130 New Chashasha, Jamtola, Narayangonj </address>
         </footer>
 
-        <button>Enquiry</button>
+        <button>Inquiry</button>
     </div>
 </body>
 
