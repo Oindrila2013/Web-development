@@ -7,31 +7,31 @@
     <title>Cusines</title>
 
     <style>
-      body{
-        background-color: #FFDCDC;
-      }
-      
-      header{
-        background-color: #FCD8CD;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
+        body {
+            background-color: #FFDCDC;
+        }
 
-      nav{
-        background-color: #B0DB9C;
-        display: flex;
-        justify-content: center;
-      }
+        header {
+            background-color: #FCD8CD;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-      #intro{
-        background-color: lightpink;
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-        z-index: 2;
-      }
+        nav {
+            background-color: #B0DB9C;
+            display: flex;
+            justify-content: center;
+        }
 
-        .main-section-content h2{
+        #intro {
+            background-color: lightpink;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .main-section-content h2 {
             background-color: #e9b5e8;
             font-family: Arial, Helvetica, sans-serif;
             padding: 5px;
@@ -41,11 +41,12 @@
 
         }
 
-        #some-famous-cuisines{
+        #some-famous-cuisines {
             display: flex;
             justify-content: center;
             align-items: center;
         }
+
         #some-famous-cuisines,
         footer {
             background-color: rgb(174, 230, 211);
@@ -62,11 +63,11 @@
 
         header,
         nav,
-        #main-section{
+        #main-section {
             border-radius: 10px;
         }
 
-        header h1{
+        header h1 {
             color: #333333;
             font-size: 50px;
             font-family: Arial, Helvetica, sans-serif;
@@ -74,29 +75,29 @@
         }
 
         h2,
-        p{
+        p {
             color: rgb(0, 0, 0);
         }
 
         table,
         th,
-        td{
+        td {
             border: 1px solid black;
         }
 
-        tr:last-child{
+        tr:last-child {
             color: red;
         }
 
-        span{
+        span {
             color: blue;
         }
 
-        footer p:first-child span{
+        footer p:first-child span {
             color: red;
         }
 
-        .instructors-info{
+        .instructors-info {
             border: 1px solid black;
             border-radius: 5px;
             margin: 100px;
@@ -107,7 +108,7 @@
             justify-content: center;
         }
 
-        button{
+        button {
             color: rgb(255, 255, 255);
             background-color: rgb(175, 116, 227);
             font-size: 20px;
@@ -120,132 +121,135 @@
             bottom: 40px;
         }
 
-        ul{
+        ul {
             list-style-type: none;
         }
 
-        li a{
+        li a {
             text-decoration: none;
             color: #333333;
             font-size: 20px;
             font-weight: 600;
         }
 
-        li a:hover{
+        li a:hover {
             color: blue;
         }
 
-        p{
+        p {
             font-size: 18px;
         }
 
-        h3{
+        h3 {
             font-size: 20px;
             font-family: Arial, Helvetica, sans-serif;
             text-decoration: underline;
         }
 
-        nav li{
+        nav li {
             margin: 10px;
             padding: 5px;
             border: 1px solid;
-            border-radius:5px
+            border-radius: 5px
         }
 
-        .instructors-info div:last-child{
+        .instructors-info div:last-child {
             margin-left: 50px;
         }
 
-        .main-section-content{
+        .main-section-content {
             padding: 20px;
         }
 
-        table{
+        table {
             margin: auto;
         }
+
         th,
-        td{
+        td {
             padding: 10px;
         }
 
-        footer{
+        footer {
             padding: 20px;
             display: flex;
             justify-content: space-around;
             align-items: center;
         }
 
-        #some-famous-cuisines h2{
+        #some-famous-cuisines h2 {
             padding: 20px;
         }
 
-        ol li{
+        ol li {
             margin-bottom: 20px;
         }
 
         #food-reviews h3,
-        #food-reviews p{
+        #food-reviews p {
             position: relative;
             left: 40%;
             width: 400px;
         }
 
-        #instuctors{
+        #instuctors {
             display: flex;
             align-items: center;
             justify-content: center;
         }
-        nav ul{
+
+        nav ul {
             display: flex;
             justify-content: space-between;
         }
 
-        header{
+        header {
             grid-area: header;
         }
 
-        nav{
+        nav {
             grid-area: nav;
         }
 
-        #info{
+        #info {
             grid-area: info;
         }
 
-        #main-section{
+        #main-section {
             grid-area: main-section;
         }
 
-        #bestsellers{
+        #bestsellers {
             grid-area: bestsellers;
         }
 
-        footer{
+        footer {
             grid-area: footer;
         }
 
-         #bestsellers h2{
+        #bestsellers h2 {
             padding: 20px;
         }
 
-        ol li{
+        ol li {
             margin-bottom: 20px;
         }
+
         #book-reviews h3,
-        #book-reviews p{
+        #book-reviews p {
             position: relative;
             left: 40%;
             width: 400px;
         }
 
-        .grid-container{
+        .grid-container {
             display: grid;
             grid-template-columns: auto auto auto auto auto;
-            grid-template-areas: 
-            " header header header header info"
-            " nav nav nav nav into "
-            " main-section main-section main-section main-section bestsellers "
-            " footer footer footer footer footer ";
+            grid-template-areas:
+                " header header header header info"
+                " nav nav nav nav into "
+                " main-section main-section main-section main-section bestsellers "
+                " footer footer footer footer footer ";
         }
     </style>
 </head>
@@ -270,9 +274,12 @@
         </nav>
 
         <!-- intro -->
-        <div id="intro">
+        <div id="intr">
             <h1>Welcome To Cuisines</h1>
-            <p><em>Cusines</em>is an educational online platform that provides all kinds of information about cuisines all around the world . And our special thing is that we have many offline workshops (in the capitals of many countries) where people can come and have a full on hand experience on any type of cuisine our customers.</p>
+            <p><em>Cusines</em>is an educational online platform that provides all kinds of information about cuisines
+                all around the world . And our special thing is that we have many offline workshops (in the capitals of
+                many countries) where people can come and have a full on hand experience on any type of cuisine our
+                customers.</p>
         </div>
 
         <div id="main-section">
@@ -283,21 +290,24 @@
                 <div id="instructors">
                     <div class="instructors-info">
                         <div>
-                            <img width="200px" height="100px"  src="istockphoto-1320722505-612x612.jpg" alt="">
+                            <img width="200px" height="100px" src="istockphoto-1320722505-612x612.jpg" alt="">
                         </div>
                         <div>
                             <h3>Ms. Caramel</h3>
-                            <p>She is an profesional instructor who can make over 100ths of cuisines from regional cuisines and national cuisines.And she has over 5 years of experience.</p>
+                            <p>She is an profesional instructor who can make over 100ths of cuisines from regional
+                                cuisines and national cuisines.And she has over 5 years of experience.</p>
                         </div>
                     </div>
 
                     <div class="instructors-info">
                         <div>
-                           <img width="200px" height="100px"  src="istockphoto-1298088270-612x612.jpg" alt="">
+                            <img width="200px" height="100px" src="istockphoto-1298088270-612x612.jpg" alt="">
                         </div>
                         <div>
                             <h3>Ms. Pudding</h3>
-                            <p>She is also an excellent profesional instructor who has knowllege to make a total of 200 cuisines which maybe you never had heard of. the special thing of her is that she can lear to make any type of cuisines in just 1 week no matter what it is.</p>
+                            <p>She is also an excellent profesional instructor who has knowllege to make a total of 200
+                                cuisines which maybe you never had heard of. the special thing of her is that she can
+                                lear to make any type of cuisines in just 1 week no matter what it is.</p>
                         </div>
                     </div>
                 </div>
@@ -308,9 +318,11 @@
                 <h2>Book Reviews</h2>
 
                 <h3>Banglashi Cuisines</h3>
-                <p><strong>Jagdish Chandra bosu:</strong><q> I love it. It is amazing and this is the perfect mix of spice and flavours.</q></p>
-                <p><strong>Rabidranath Tagore :</strong><q> I am in love with the taste of it so much that I will eat it as my last meal.</q></p>
-                
+                <p><strong>Jagdish Chandra bosu:</strong><q> I love it. It is amazing and this is the perfect mix of
+                        spice and flavours.</q></p>
+                <p><strong>Rabidranath Tagore :</strong><q> I am in love with the taste of it so much that I will eat it
+                        as my last meal.</q></p>
+
             </div>
 
             <!-- Content3 (table) -->
@@ -375,4 +387,3 @@
 </body>
 
 </html>
-
